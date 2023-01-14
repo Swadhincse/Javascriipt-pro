@@ -1,4 +1,14 @@
-#size{
-color: #000;
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td{
+    border:1px solid hsl(0, 31%, 80%);
+    padding: 8px;
+    text-align: left;
 
+}
+
+th{
+    background-color: aqua;
 }

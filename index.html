@@ -6,12 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <button class="size">
-        sid
-    </button>
+    <div>
+        <h1> Add Employee</h1>
+        <form id="employeeForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" required><br>
+            <label for="profession">Profession</label>
+            <input type="text" id="profession" required><br>
+            <label for="age">Age</label>
+            <input type="number" id="age" required>
+            <button type="submit" onclick="addEmployee()">Add Employee</button>
+        </form>
+        <div id="error" style="color:red;"></div>
+        <div id="success" style="color:green;"></div>
+    </div>
+
+    <div>
+        <h1>
+            Employee Table
+        </h1>
+        <table id="employeeTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Profession</th>
+                    <th>Age</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="employeeList"></tbody>
+        </table>
+    </div>
+
+
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
